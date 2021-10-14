@@ -15,13 +15,13 @@ spec:
   strategy: {}
   template:
     metadata:
-      annotations:
-        alpha.image.policy.openshift.io/resolve-names: '*'
+#      annotations:
+#        alpha.image.policy.openshift.io/resolve-names: '*'
       labels:
         deployment: flaskr
     spec:
       containers:
-      - image: flaskr:1.0.1
+      - image: image-registry.openshift-image-registry.svc:5000/flaskr-dev/flaskr:1.0.1
         name: flaskr
         ports:
         - containerPort: 8080
