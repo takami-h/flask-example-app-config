@@ -21,7 +21,7 @@ spec:
         deployment: flaskr
     spec:
       containers:
-      - image: image-registry.openshift-image-registry.svc:5000/flaskr-dev/flaskr:1.0.1
+      - image: image-registry.openshift-image-registry.svc:5000/flaskr-dev/flaskr:latest
         name: flaskr
         ports:
         - containerPort: 8080
