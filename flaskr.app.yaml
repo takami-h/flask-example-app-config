@@ -15,8 +15,8 @@ spec:
   strategy: {}
   template:
     metadata:
-#      annotations:
-#        alpha.image.policy.openshift.io/resolve-names: '*'
+      annotations:
+        alpha.image.policy.openshift.io/resolve-names: '*'
       labels:
         deployment: flaskr
     spec:
