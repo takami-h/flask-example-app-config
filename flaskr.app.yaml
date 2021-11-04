@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/instance: flaskr
   name: flaskr
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       deployment: flaskr
